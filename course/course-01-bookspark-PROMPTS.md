@@ -233,7 +233,16 @@ Add a book detail page and make the cards clickable.
 
 **Recording goal:** дэлгүүрээ Vercel дээр deploy хийж бодит URL авах. (Дэлгэрэнгүй: [5-р хэсэг — Deploy](course-01-bookspark-5-deploy.md).)
 
-**💬 PROMPT:**
+**🔌 Clone хийсэн бол ЭХЛЭЭД — git холбоогоо салга** (`git clone`-оор татсан бол `origin` миний repo руу заасан тул push хийж чадахгүй):
+
+```text
+I cloned this BookSpark starter from someone else's GitHub repo, so origin points to their
+repo and I can't push. Delete the existing .git folder, start a fresh git repo, make one
+initial commit with all my files, then tell me in Mongolian the exact commands to create my
+OWN empty GitHub repo and push to it. Do not push anything yourself.
+```
+
+**💬 PROMPT (deploy):**
 
 ```text
 Help me deploy this Next.js app to Vercel as MY OWN project (not linked to anyone else's repo).

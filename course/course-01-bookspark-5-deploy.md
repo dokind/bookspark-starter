@@ -17,7 +17,45 @@
 ---
 
 ## ⚠️ ХАМГИЙН ЧУХАЛ — энэ бол ЧИНИЙ апп
-Чи апп-аа эхнээс нь (`create-next-app`) өөрөө үүсгэсэн. Энэ бол **100% чиний код** — багшийн repo биш. Тиймээс deploy-ийг ч **ӨӨРИЙН** Vercel болон **ӨӨРИЙН** GitHub repo-д хийнэ. Хэн нэгний repo руу юу ч push хийхгүй.
+Энэ дэлгүүр бол чиний код. Deploy-ийг ч **ӨӨРИЙН** Vercel болон **ӨӨРИЙН** GitHub repo-д хийнэ. Багшийн repo руу юу ч push хийхгүй (хийж ч чадахгүй — тэр repo хамгаалагдсан).
+
+---
+
+## 🔌 Эхлээд: миний repo-той холбоогоо салга  *(clone хийсэн бол — ихэнх нь!)*
+Хэрэв чи төслөө **`git clone`-оор** (Курс 0/1-д заасан шиг) татсан бол, чиний хавтас одоо хүртэл **миний repo руу холбогдсон** хэвээр байгаа — `origin` миний хаяг руу заасан. Тиймээс push хийх гээд **"permission denied"** алдаа гарна. Эхлээд үүнийг 100% өөрийн болгоё.
+
+**🤖 Хамгийн амар — Claude Code-д энэ prompt-ыг өг:**
+```text
+I cloned the BookSpark starter from someone else's GitHub repo, so this project is still
+connected to their repo (origin points to it) and I can't push. Make this project 100% MINE:
+1. Show the current remote with `git remote -v`.
+2. Remove the connection to the original repo — the cleanest way is to delete the existing
+   .git folder and start a fresh git repo. Do that and explain what you are doing.
+3. Create one initial commit with all my current files.
+4. Then tell me, step by step in Mongolian, how to make my OWN empty repo on github.com and
+   push to it (the exact `git remote add origin ...` + `git push -u origin main` commands,
+   with a placeholder for my username/repo).
+Do NOT push anything yourself — only prepare everything and explain in Mongolian.
+```
+
+**⌨️ Эсвэл гараараа:**
+
+*Цэвэр эхлэл (зөвлөнө) — багшийн git-ийг бүрэн устгаад шинээр эхэл:*
+```bash
+git remote -v                # одоо миний хаяг руу заасан байгаа эсэхийг харна
+rm -rf .git                  # багшийн git түүх+холболтыг устга
+                             #   ⊳ Windows PowerShell бол: Remove-Item -Recurse -Force .git
+git init                     # өөрийн шинэ, цэвэр git
+git add -A
+git commit -m "My BookSpark"
+```
+
+*Эсвэл зүгээр л холбоог тасал (түүхийг үлдээнэ):*
+```bash
+git remote remove origin     # миний repo-той холбоо тасрана
+```
+
+→ Одоо доорх **Арга A**-ийн "өөрийн repo үүсгэх → push" алхмаар үргэлжлүүл. (Git огт хүсэхгүй бол → **Арга B (Vercel CLI)**, git хэрэггүй.)
 
 ---
 
@@ -68,15 +106,6 @@ vercel               # асуултуудад Enter дарж яв. Эхэнд н
 vercel --prod        # бодит (production) URL гаргана
 ```
 → Live URL шууд гарна. (GitHub repo үүсэхгүй, автомат deploy байхгүй — зөвхөн хурдан.)
-
----
-
-## 🧯 Хэрэв чи checkpoint-аас (миний repo-г clone хийж) эхэлсэн бол
-Чиний `origin` миний repo руу заасан байж магадгүй. Салга:
-```bash
-git remote remove origin
-```
-Дараа нь **Арга A**-ийн 1, 2, 3-ыг өөрийн repo-гоор хий. (Эсвэл хамгийн амар нь: ZIP-ийг л татаад **Арга B**-г ашигла.)
 
 ---
 
