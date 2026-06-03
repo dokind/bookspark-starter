@@ -245,16 +245,18 @@ OWN empty GitHub repo and push to it. Do not push anything yourself.
 **💬 PROMPT (deploy):**
 
 ```text
-Help me deploy this Next.js app to Vercel as MY OWN project (not linked to anyone else's repo).
+My project is now my own (origin detached / mine after the previous step). Help me ship it.
 
-1. First run `npm run build` and fix any errors so the build is clean.
+1. Run `npm run build` and fix any errors so the build is clean.
 2. Make sure .gitignore ignores node_modules and .next.
-3. Then guide me step by step, in Mongolian, to deploy with the Vercel CLI:
-   - npm i -g vercel
-   - vercel        (explain each prompt; I will log in with GitHub or email)
-   - vercel --prod (to get the public production URL)
-4. Also briefly explain the alternative: push to my OWN new GitHub repo and import it on vercel.com.
-Do NOT push to any git remote yourself — only guide me and explain in Mongolian.
+3. Push to my OWN GitHub repo:
+   - If the `gh` CLI is installed and I'm logged in, run:
+     gh repo create my-bookspark --public --source=. --push
+   - Otherwise tell me to create an empty repo at github.com/new, then give me the exact
+     `git remote add origin ...` + `git branch -M main` + `git push -u origin main` commands.
+4. Then walk me through importing that repo at vercel.com → Deploy → getting my live URL.
+5. Also mention the quick no-GitHub alternative: npm i -g vercel → vercel → vercel --prod.
+Do NOT push to anyone else's remote. Explain each step in Mongolian.
 ```
 
 **✅ Шалгах:** Live URL дээр дэлгүүр ажиллана (нүүр + ном дээр дарахад дэлгэрэнгүй).
