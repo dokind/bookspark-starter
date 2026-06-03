@@ -229,6 +229,35 @@ Add a book detail page and make the cards clickable.
 
 ---
 
+## 🎬 Part 5 — Deploy: интернэтэд гаргах  *(үр дүн: live URL)*
+
+**Recording goal:** дэлгүүрээ Vercel дээр deploy хийж бодит URL авах. (Дэлгэрэнгүй: [5-р хэсэг — Deploy](course-01-bookspark-5-deploy.md).)
+
+**💬 PROMPT:**
+
+```text
+Help me deploy this Next.js app to Vercel as MY OWN project (not linked to anyone else's repo).
+
+1. First run `npm run build` and fix any errors so the build is clean.
+2. Make sure .gitignore ignores node_modules and .next.
+3. Then guide me step by step, in Mongolian, to deploy with the Vercel CLI:
+   - npm i -g vercel
+   - vercel        (explain each prompt; I will log in with GitHub or email)
+   - vercel --prod (to get the public production URL)
+4. Also briefly explain the alternative: push to my OWN new GitHub repo and import it on vercel.com.
+Do NOT push to any git remote yourself — only guide me and explain in Mongolian.
+```
+
+**✅ Шалгах:** Live URL дээр дэлгүүр ажиллана (нүүр + ном дээр дарахад дэлгэрэнгүй).
+
+**🔁 Засах prompt-ууд:**
+- `The Vercel build failed with this log: <paste>. Diagnose and fix, then I'll redeploy.`
+- `I cloned the starter so my origin points at someone else's repo. Help me detach it (git remote remove origin) and push to my own new GitHub repo.`
+
+**🧠 Ойлгуул:** `Explain in Mongolian what "build" and "deploy" mean, and why Vercel only deploys when the build passes.`
+
+---
+
 ## 🆘 Алдаа гарвал — Claude Code-д өгөх prompt-ууд
 
 Claude Code-ийн хамгийн хүчтэй тал: алдааг өөрт нь засуулах. Терминал/browser дээрх
@@ -255,13 +284,14 @@ Read the relevant file(s), fix the cause, and explain in Mongolian what was wron
 
 1. Starter задлаад VSCode-оор нээ → terminal → `bash setup.sh` → `claude`
 2. **1-р PROMPT — CLAUDE.md** (төслийн дүрэм тогтоох)
-3. Part 1 → 2 → 3 → 4: prompt өг → `y`/`a`-аар зөвшөөр → browser-аас шалга → нэг "ойлгуул" prompt
-4. Дуусаад `/review` гэж бичээд Claude-аар кодоо хянуул
-5. `#ship-it-friday`-д screenshot
+3. Part 1 → 2 → 3 → 4 → 5: prompt өг → `y`/`a`-аар зөвшөөр → browser-аас шалга → нэг "ойлгуул" prompt
+4. Part 5-д Vercel дээр deploy хийж live URL ав
+5. Дуусаад `/review` гэж бичээд Claude-аар кодоо хянуул
+6. `#ship-it-friday`-д live URL эсвэл screenshot
 
 > Тэмдэглэл: AI заримдаа жаахан өөр код бичнэ — энэ нь vibe coding-ийн мөн чанар. Үр дүн нь
 > ажиллаж байвал болсон. Яг ижил код хэрэгтэй бол checkpoint харьцуул.
 
 ---
 
-*Холбоотой: [Part 1](course-01-bookspark-1-setup.md) · [Part 2](course-01-bookspark-2-data.md) · [Part 3](course-01-bookspark-3-components.md) · [Part 4](course-01-bookspark-4-detail.md) · бэлэн код `checkpoints/`*
+*Холбоотой: [Part 1](course-01-bookspark-1-setup.md) · [Part 2](course-01-bookspark-2-data.md) · [Part 3](course-01-bookspark-3-components.md) · [Part 4](course-01-bookspark-4-detail.md) · [Part 5](course-01-bookspark-5-deploy.md) · бэлэн код `checkpoints/`*
