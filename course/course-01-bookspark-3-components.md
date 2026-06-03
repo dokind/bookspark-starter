@@ -1,9 +1,9 @@
-# Курс 4 (BookSpark) · 3-р хэсэг: Components
+# Курс 1 (BookSpark) · 3-р хэсэг: Components
 ## Header ба BookCard — дахин ашиглагдах хэсгүүд
 
-**⏱️ ~20 минут** · **Өмнөх:** `c04-2-data` · **Checkpoint:** `c04-3-components`
+**⏱️ ~20 минут** · **Өмнөх:** `c01-2-data` · **Checkpoint:** `c01-3-components`
 
-> 🤖 **Хоёр зам:** **(A) Claude Code-д prompt өгч бүтээ** — [Prompt Pack → Part 3](course-04-bookspark-PROMPTS.md) (зөвлөнө). **(B)** Доорх кодыг хуул — fallback.
+> 🤖 **Хоёр зам:** **(A) Claude Code-д prompt өгч бүтээ** — [Prompt Pack → Part 3](course-01-bookspark-PROMPTS.md) (зөвлөнө). **(B)** Доорх кодыг хуул — fallback.
 
 > Энгийн жагсаалтыг **гоё карт** болгож, бүх хуудсанд гарах толгой (Header) нэмнэ.
 
@@ -159,8 +159,8 @@ export default function Home() {
 - [ ] Цонхоо нарийсгахад 3 → 2 → 1 багана болно
 
 ## 📦 Бэлэн код
-- **ZIP:** `checkpoints/bookspark-c04-3-components.zip`
-- **Git:** `git checkout c04-3-components`
+- **ZIP:** `checkpoints/bookspark-c01-3-components.zip`
+- **Git:** `git checkout c01-3-components`
 
 ## ⚠️ Түгээмэл алдаа
 - Cover-ийн өнгө гарахгүй → `accent` нь бүтэн класс (`from-indigo-500 to-violet-600`) байх ёстой, Tailwind-д бүтэн нэр хэрэгтэй.
@@ -168,4 +168,4 @@ export default function Home() {
 
 ---
 
-*Дараагийн хэсэг: [4-р хэсэг — Pages](course-04-bookspark-4-detail.md): ном дээр дарвал дэлгэрэнгүй хуудас руу орно.*
+*Дараагийн хэсэг: [4-р хэсэг — Pages](course-01-bookspark-4-detail.md): ном дээр дарвал дэлгэрэнгүй хуудас руу орно.*

@@ -1,9 +1,9 @@
-# Курс 4 (BookSpark) · 2-р хэсэг: Data
+# Курс 1 (BookSpark) · 2-р хэсэг: Data
 ## Номнуудаа нэмж, жагсаах
 
-**⏱️ ~15 минут** · **Өмнөх:** `c04-1-setup` · **Checkpoint:** `c04-2-data`
+**⏱️ ~15 минут** · **Өмнөх:** `c01-1-setup` · **Checkpoint:** `c01-2-data`
 
-> 🤖 **Хоёр зам:** **(A) Claude Code-д prompt өгч бүтээ** — [Prompt Pack → Part 2](course-04-bookspark-PROMPTS.md) (зөвлөнө). **(B)** Доорх кодыг хуул — fallback.
+> 🤖 **Хоёр зам:** **(A) Claude Code-д prompt өгч бүтээ** — [Prompt Pack → Part 2](course-01-bookspark-PROMPTS.md) (зөвлөнө). **(B)** Доорх кодыг хуул — fallback.
 
 > Одоо дэлгүүрт **ном** оруулна. Database-гүйгээр, энгийн файлд.
 
@@ -17,7 +17,7 @@
 ---
 
 ## 🧠 Яагаад файлд бичиж байна вэ, database биш гэж?
-Database setup хийхгүйгээр дэлгүүрээ хурдан ажиллуулахын тулд. Курс 5-д бид яг **энэ өгөгдлийг** Supabase руу нүүлгэхэд апп бараг өөрчлөгдөхгүй — учир нь бүх хуудас `getBooks()` функцээр л өгөгдөл уншина. Бид зөвхөн тэр функцийн **дотор**-ыг солино. Энэ бол сайн зуршил: **өгөгдлийн эх сурвалжийг нэг газар байлга.**
+Database setup хийхгүйгээр дэлгүүрээ хурдан ажиллуулахын тулд. Курс 2-д бид яг **энэ өгөгдлийг** Supabase руу нүүлгэхэд апп бараг өөрчлөгдөхгүй — учир нь бүх хуудас `getBooks()` функцээр л өгөгдөл уншина. Бид зөвхөн тэр функцийн **дотор**-ыг солино. Энэ бол сайн зуршил: **өгөгдлийн эх сурвалжийг нэг газар байлга.**
 
 ---
 
@@ -26,7 +26,7 @@ Database setup хийхгүйгээр дэлгүүрээ хурдан ажилл
 `bookspark` дотор `lib` хавтас, дотор нь `books.ts` үүсгээд бүтнээр нь хуул:
 
 ```ts
-// lib/books.ts — дэлгүүрийн ТҮР "database". Курс 5-д Supabase руу нүүнэ.
+// lib/books.ts — дэлгүүрийн ТҮР "database". Курс 2-д Supabase руу нүүнэ.
 
 // Нэг номын "хэлбэр". TypeScript үүгээр алдааг урьдчилан барина.
 export type Book = {
@@ -120,8 +120,8 @@ export default function Home() {
 - [ ] `lib/books.ts`-д **өөрийн** нэг номыг нэмж туршсан
 
 ## 📦 Бэлэн код
-- **ZIP:** `checkpoints/bookspark-c04-2-data.zip`
-- **Git:** `git checkout c04-2-data`
+- **ZIP:** `checkpoints/bookspark-c01-2-data.zip`
+- **Git:** `git checkout c01-2-data`
 
 ## ⚠️ Түгээмэл алдаа
 - `Cannot find module '@/lib/books'` → файлын зам (`lib/books.ts`) ба `@/` зөв эсэх.
@@ -129,4 +129,4 @@ export default function Home() {
 
 ---
 
-*Дараагийн хэсэг: [3-р хэсэг — Components](course-04-bookspark-3-components.md): жагсаалтыг гоё карт болгоно.*
+*Дараагийн хэсэг: [3-р хэсэг — Components](course-01-bookspark-3-components.md): жагсаалтыг гоё карт болгоно.*

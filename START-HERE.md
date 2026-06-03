@@ -1,4 +1,4 @@
-# 🎬 ЭНДЭЭС ЭХЭЛ — BookSpark (Курс 4)
+# 🎬 ЭНДЭЭС ЭХЭЛ — BookSpark (Курс 1)
 
 Чи **бэлэн төсөлгүйгээр**, зөвхөн эдгээр файлаас эхэлж байна — яг Намсрайн адил.
 Дэлгүүрийн бүх кодыг Claude Code-д **prompt** өгч бүтээнэ.
@@ -16,7 +16,7 @@ bash setup.sh
 claude
 ```
 
-**3.** `course/course-04-bookspark-PROMPTS.md`-ыг нээ (зүүн талын Explorer-аас).
+**3.** `course/course-01-bookspark-PROMPTS.md`-ыг нээ (зүүн талын Explorer-аас).
 
 **4. Prompt-уудыг ДАРААЛЛААР өг:**
 - **1-р PROMPT — CLAUDE.md** (төслийн дүрэм тогтоох) ← хамгийн эхэнд

@@ -1,11 +1,11 @@
-# Курс 4 (BookSpark) · 1-р хэсэг: Setup
+# Курс 1 (BookSpark) · 1-р хэсэг: Setup
 ## Төсөл үүсгээд ажиллуулах
 
-**⏱️ ~15 минут** · **Checkpoint:** `c04-1-setup`
+**⏱️ ~15 минут** · **Checkpoint:** `c01-1-setup`
 
-> 🤖 **Хоёр зам бий:** **(A) Claude Code-д prompt өгч бүтээ** — энэ хэсгийн бэлэн prompt-ууд [Prompt Pack → Part 1](course-04-bookspark-PROMPTS.md) дотор (жинхэнэ vibe coding, зөвлөнө). **(B)** Доорх кодыг шууд хуул — fallback.
+> 🤖 **Хоёр зам бий:** **(A) Claude Code-д prompt өгч бүтээ** — энэ хэсгийн бэлэн prompt-ууд [Prompt Pack → Part 1](course-01-bookspark-PROMPTS.md) дотор (жинхэнэ vibe coding, зөвлөнө). **(B)** Доорх кодыг шууд хуул — fallback.
 
-> 🎓 Бид Курс 4–8-д **нэг дэлгүүрийг** (Номын дэлгүүр) алхам алхмаар бүтээнэ. Энэ бол 1-р алхам: хоосон төслийг үүсгээд, өөрийн брэндээр будна.
+> 🎓 Бид Курс 1–5-д **нэг дэлгүүрийг** (Номын дэлгүүр) алхам алхмаар бүтээнэ. Энэ бол 1-р алхам: хоосон төслийг үүсгээд, өөрийн брэндээр будна.
 
 ---
 
@@ -137,8 +137,8 @@ export default function Home() {
 - [ ] Монгол үсэг цэвэрхэн харагдаж байна
 
 ## 📦 Бэлэн код (build хийж чадаагүй бол)
-- **ZIP:** `checkpoints/bookspark-c04-1-setup.zip` → задлаад `npm install` → `npm run dev`
-- **Git:** `git checkout c04-1-setup`
+- **ZIP:** `checkpoints/bookspark-c01-1-setup.zip` → задлаад `npm install` → `npm run dev`
+- **Git:** `git checkout c01-1-setup`
 
 ## ⚠️ Түгээмэл алдаа
 - Кирилл муухай → `subsets: ["latin","cyrillic"]` байгаа эсэхээ шалга.
@@ -147,4 +147,4 @@ export default function Home() {
 
 ---
 
-*Дараагийн хэсэг: [2-р хэсэг — Data](course-04-bookspark-2-data.md): номнуудаа нэмж жагсаана.*
+*Дараагийн хэсэг: [2-р хэсэг — Data](course-01-bookspark-2-data.md): номнуудаа нэмж жагсаана.*

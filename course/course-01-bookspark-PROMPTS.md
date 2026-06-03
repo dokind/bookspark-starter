@@ -1,4 +1,4 @@
-# Курс 4 (BookSpark) · Claude Code Prompt Pack
+# Курс 1 (BookSpark) · Claude Code Prompt Pack
 ## Дэлгүүрээ "бичихгүйгээр" — Claude Code-д prompt өгч бүтээх
 
 > 🎙️ **Энэ бол бичлэг хийх script.** Намсрай эдгээр prompt-ыг дарааллаар нь Claude Code-д
@@ -66,7 +66,7 @@ Report what you did, in Mongolian.
 **💬 PROMPT:**
 
 ```text
-Read the CLAUDE.md file in this project, and skim course/course-04-bookspark-PROMPTS.md.
+Read the CLAUDE.md file in this project, and skim course/course-01-bookspark-PROMPTS.md.
 
 Then create/update CLAUDE.md so it is a clear, concise guide (under ~40 lines) for
 building BookSpark, a Mongolian digital bookstore:
@@ -93,7 +93,7 @@ first makes every later prompt better.
 
 ---
 
-## 🎬 Part 1 — Setup: брэнд хийсэн нүүр  *(checkpoint `c04-1-setup`)*
+## 🎬 Part 1 — Setup: брэнд хийсэн нүүр  *(checkpoint `c01-1-setup`)*
 
 **Recording goal:** хоосон төслийг "Номын дэлгүүр" болгож, монгол үсэг зөв гаргах.
 
@@ -124,7 +124,7 @@ Keep it minimal — no header and no data yet.
 
 ---
 
-## 🎬 Part 2 — Data: номнуудаа нэмж жагсаах  *(checkpoint `c04-2-data`)*
+## 🎬 Part 2 — Data: номнуудаа нэмж жагсаах  *(checkpoint `c01-2-data`)*
 
 **Recording goal:** database-гүйгээр номын өгөгдөл оруулж, дэлгэцэнд жагсаах.
 
@@ -160,7 +160,7 @@ comment that Course 5 will move it to Supabase.
 
 ---
 
-## 🎬 Part 3 — Components: Header + BookCard, гоё grid  *(checkpoint `c04-3-components`)*
+## 🎬 Part 3 — Components: Header + BookCard, гоё grid  *(checkpoint `c01-3-components`)*
 
 **Recording goal:** давтагдах кодыг component болгож, жинхэнэ дэлгүүр шиг харагдуулах.
 
@@ -195,7 +195,7 @@ Refactor into reusable components and make it look like a real shop.
 
 ---
 
-## 🎬 Part 4 — Pages: номын дэлгэрэнгүй хуудас  *(checkpoint `c04-4-detail`)*
+## 🎬 Part 4 — Pages: номын дэлгэрэнгүй хуудас  *(checkpoint `c01-4-detail`)*
 
 **Recording goal:** карт дээр дарвал дэлгэрэнгүй хуудас руу орох — dynamic route.
 
@@ -216,7 +216,7 @@ Add a book detail page and make the cards clickable.
      next/navigation. Otherwise render: a back link "← Бүх ном руу буцах", a large
      gradient cover with the emoji, the title, "Зохиогч: <author>", the description,
      the price, and a "Худалдаж авах" button that does nothing yet, with a small note
-     "* Төлбөр (QPay)-г Курс 7-д холбоно".
+     "* Төлбөр (QPay)-г Курс 4-д холбоно".
 ```
 
 **✅ Шалгах:** Карт дээр дарвал дэлгэрэнгүй хуудас руу орно. Буруу хаяг (`/book/test`) → 404.
@@ -246,8 +246,8 @@ Read the relevant file(s), fix the cause, and explain in Mongolian what was wron
 - `Tailwind classes aren't applying. Check globals.css has @import "tailwindcss" (v4).`
 - `Cannot find module '@/lib/books'. Check the path and the @/ alias.`
 
-**Бүгд бүтэлгүй бол:** тухайн хэсгийн checkpoint-ыг ав — `git checkout c04-2-data` эсвэл
-`checkpoints/bookspark-c04-2-data.zip`.
+**Бүгд бүтэлгүй бол:** тухайн хэсгийн checkpoint-ыг ав — `git checkout c01-2-data` эсвэл
+`checkpoints/bookspark-c01-2-data.zip`.
 
 ---
 
@@ -264,4 +264,4 @@ Read the relevant file(s), fix the cause, and explain in Mongolian what was wron
 
 ---
 
-*Холбоотой: [Part 1](course-04-bookspark-1-setup.md) · [Part 2](course-04-bookspark-2-data.md) · [Part 3](course-04-bookspark-3-components.md) · [Part 4](course-04-bookspark-4-detail.md) · бэлэн код `checkpoints/`*
+*Холбоотой: [Part 1](course-01-bookspark-1-setup.md) · [Part 2](course-01-bookspark-2-data.md) · [Part 3](course-01-bookspark-3-components.md) · [Part 4](course-01-bookspark-4-detail.md) · бэлэн код `checkpoints/`*
