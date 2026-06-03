@@ -28,7 +28,7 @@
 
 Чи **бэлэн төсөлгүйгээр**, зөвхөн татаж авсан файлуудаас эхэлнэ — яг Намсрайн адил.
 
-**Татаж авах:** `bookspark-starter.zip` → задлаад VSCode-оор нээ. Дотор нь:
+**Татаж авах** — [github.com/dokind/bookspark-starter](https://github.com/dokind/bookspark-starter) → ногоон **`Code`** товч → **Download ZIP** (эсвэл `git clone https://github.com/dokind/bookspark-starter.git`). Задлаад VSCode-оор нээ. Дотор нь:
 - `CLAUDE.md` — төслийн дүрэм (бэлэн загвар)
 - `START-HERE.md` — товч заавар
 - `setup.sh` — хоосон Next.js апп-ыг ЭНЭ хавтсанд босгох жижиг script
